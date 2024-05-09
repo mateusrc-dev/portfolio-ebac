@@ -11,7 +11,7 @@ const Sidebar = ({ trocaTema }: Props) => (
   <aside>
     <SidebarContainer>
       <Avatar />
-      <Titulo fontSize={20}>Mateus Raimundo</Titulo>
+      <Titulo fontSize={20}>Mateus Carvalho</Titulo>
       <Paragrafo tipo="secundario" fontSize={16}>
         mateusrc-dev
       </Paragrafo>

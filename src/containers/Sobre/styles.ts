@@ -6,6 +6,7 @@ export const GithubSecao = styled.div`
 
   img {
     height: 157px;
+    margin-right: 8px;
 
     @media (max-width: 768px) {
       height: auto;
