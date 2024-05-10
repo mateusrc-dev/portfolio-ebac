@@ -26,6 +26,14 @@ import explorerfood_pratos from '../../assets/explorerfood_pratos.png'
 import explorerfood_pesquisa from '../../assets/explorerfood_pesquisa.png'
 import explorerfood_pagamento from '../../assets/explorerfood_pagamento.png'
 import explorerfood_status from '../../assets/explorerfood_status.png'
+import interestelarmovie_1 from '../../assets/interestelarmovie_1.png'
+import interestelarmovie_2 from '../../assets/interestelarmovie_2.png'
+import interestelarmovie_3 from '../../assets/interestelarmovie_3.png'
+import interestelarmovie_4 from '../../assets/interestelarmovie_4.png'
+import todovue_1 from '../../assets/todovue_1.png'
+import todovue_2 from '../../assets/todovue_2.png'
+import todovue_3 from '../../assets/todovue_3.png'
+import todovue_4 from '../../assets/todovue_4.png'
 
 export type Projetos = {
   nome: string
@@ -216,7 +224,7 @@ const projetos: Projetos[] = [
   {
     nome: 'Explorer Food',
     descrição:
-      'Aplicativo no qual o usuário pode criar sua conta, se autenticar, adicionar pratos no pedido, adicionar pratos nos favoritos, finalizar um pedido e acompanhar o status do pedido (pendente, a caminho, concluído).',
+      'Aplicativo no qual o usuário pode criar sua conta, se autenticar, adicionar pratos no pedido, adicionar pratos nos favoritos, finalizar um pedido e acompanhar o status do pedido (pendente, a caminho, entregue).',
     tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
     imagens: [
       {
@@ -230,102 +238,86 @@ const projetos: Projetos[] = [
         titulo_imagem: 'Página Home',
         descricao_imagem:
           'Página inicial onde o usuário pode pesquisar pelos seus pratos favoritos e adiciona-los ao carrinho ou pode favoritar os pratos'
+      },
+      {
+        link_imagem: explorerfood_pagamento,
+        titulo_imagem: 'Página de pagamento',
+        descricao_imagem:
+          'Página na qual o usuário pode visualizar os detalhes do pedido, finalizar a compra e escolher o modo de pagamento'
+      },
+      {
+        link_imagem: explorerfood_status,
+        titulo_imagem: 'Página de status dos pedidos',
+        descricao_imagem:
+          'Página na qual o usuário pode acompanhar o status dos pedidos (pendente, a caminho, entregue)'
       }
     ],
     link_deploy: 'https://explorerfoodd.netlify.app/',
     link_repositório: 'https://github.com/mateusrc-dev/front_end_explorer_food'
   },
   {
-    nome: 'Fulness Clinic',
+    nome: 'Interestelar Movie ',
     descrição:
-      'Aplicativo completo de agendamento de consultas, onde profissionais podem criar horários em uma agenda e disponibilizar eles em seu perfil para os pacientes que podem agender uma consulta',
-    tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
+      'Site onde o usuário pode visualizar informações sobre o filme Interestelar, foi utilizado o Bootstrap para criar os elementos da interface, como Navs, Containers, Buttons, Grid.',
+    tecnologias: ['Javascript', 'Bootstrap', 'SASS', 'GULP'],
     imagens: [
       {
-        link_imagem: clinic_home,
+        link_imagem: interestelarmovie_1,
         titulo_imagem: 'Página Home',
         descricao_imagem:
-          'Página inicial do aplicativo onde o usuário pode ler detalhes sobre a clínica e pode navegar para a página onde mostra os profissionais do corpo clínico e para a página de login onde é possível logar como paciente ou como profissional'
+          'Página inicial do aplicativo onde o usuário um banner do filme interestelar e o cabeçalho do site que some suavemente quando o scroll da página é baixado'
       },
       {
-        link_imagem: clinic_agenda,
-        titulo_imagem: 'Agenda para criar horários',
+        link_imagem: interestelarmovie_2,
+        titulo_imagem: 'Página Home',
         descricao_imagem:
-          'Página na qual o profissional do corpo clínico pode criar os horários, excluir horários, confirmar que a consulta foi realizada, cancelar um horário que tem paciente agendado'
+          'Nessa parte da página é exibido uma nav criado com o bootstrap onde o usuário pode navegar e ver informações sobre o filme'
+      },
+      {
+        link_imagem: interestelarmovie_3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Nessa parte da página é exibido mais detalhes sobre o filme através do texto ao lado da imagem que foram arranjados utilizando o grid do bootstrap'
+      },
+      {
+        link_imagem: interestelarmovie_4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Nessa parte da página é exibido mais detalhes sobre o filme onde foi utilizado o grid do bootstrap para criar duas colunas'
       }
     ],
-    link_deploy: 'https://fullnessclinic.netlify.app/',
-    link_repositório:
-      'https://github.com/mateusrc-dev/clinica_de_saude_frontend?tab=readme-ov-file'
+    link_deploy: 'https://interestelar-movie-ebac.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/interestelar-movie-ebac'
   },
   {
-    nome: 'Fulness Clinic',
+    nome: 'Todo Vue',
     descrição:
-      'Aplicativo completo de agendamento de consultas, onde profissionais podem criar horários em uma agenda e disponibilizar eles em seu perfil para os pacientes que podem agender uma consulta',
-    tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
+      'Aplicativo onde o usuário pode adicionar atividades, visualizar quantas atividades estão pendentes, e também o usuário tem as opções de filtrar as atividades (todas tarefas, pendentes, finalizadas).',
+    tecnologias: ['Javascript', 'Vue', 'HTML'],
     imagens: [
       {
-        link_imagem: clinic_home,
-        titulo_imagem: 'Página Home',
-        descricao_imagem:
-          'Página inicial do aplicativo onde o usuário pode ler detalhes sobre a clínica e pode navegar para a página onde mostra os profissionais do corpo clínico e para a página de login onde é possível logar como paciente ou como profissional'
+        link_imagem: todovue_1,
+        titulo_imagem: 'TodoVue',
+        descricao_imagem: 'Exibindo todas as atividades'
       },
       {
-        link_imagem: clinic_agenda,
-        titulo_imagem: 'Agenda para criar horários',
-        descricao_imagem:
-          'Página na qual o profissional do corpo clínico pode criar os horários, excluir horários, confirmar que a consulta foi realizada, cancelar um horário que tem paciente agendado'
-      }
-    ],
-    link_deploy: 'https://fullnessclinic.netlify.app/',
-    link_repositório:
-      'https://github.com/mateusrc-dev/clinica_de_saude_frontend?tab=readme-ov-file'
-  },
-  {
-    nome: 'Fulness Clinic',
-    descrição:
-      'Aplicativo completo de agendamento de consultas, onde profissionais podem criar horários em uma agenda e disponibilizar eles em seu perfil para os pacientes que podem agender uma consulta',
-    tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
-    imagens: [
-      {
-        link_imagem: clinic_home,
-        titulo_imagem: 'Página Home',
-        descricao_imagem:
-          'Página inicial do aplicativo onde o usuário pode ler detalhes sobre a clínica e pode navegar para a página onde mostra os profissionais do corpo clínico e para a página de login onde é possível logar como paciente ou como profissional'
+        link_imagem: todovue_2,
+        titulo_imagem: 'TodoVue',
+        descricao_imagem: 'Criando uma nova atividade'
       },
       {
-        link_imagem: clinic_agenda,
-        titulo_imagem: 'Agenda para criar horários',
-        descricao_imagem:
-          'Página na qual o profissional do corpo clínico pode criar os horários, excluir horários, confirmar que a consulta foi realizada, cancelar um horário que tem paciente agendado'
-      }
-    ],
-    link_deploy: 'https://fullnessclinic.netlify.app/',
-    link_repositório:
-      'https://github.com/mateusrc-dev/clinica_de_saude_frontend?tab=readme-ov-file'
-  },
-  {
-    nome: 'Fulness Clinic',
-    descrição:
-      'Aplicativo completo de agendamento de consultas, onde profissionais podem criar horários em uma agenda e disponibilizar eles em seu perfil para os pacientes que podem agender uma consulta',
-    tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
-    imagens: [
-      {
-        link_imagem: clinic_home,
-        titulo_imagem: 'Página Home',
-        descricao_imagem:
-          'Página inicial do aplicativo onde o usuário pode ler detalhes sobre a clínica e pode navegar para a página onde mostra os profissionais do corpo clínico e para a página de login onde é possível logar como paciente ou como profissional'
+        link_imagem: todovue_3,
+        titulo_imagem: 'TodoVue',
+        descricao_imagem: 'Exibindo apenas as atividades pendentes'
       },
       {
-        link_imagem: clinic_agenda,
-        titulo_imagem: 'Agenda para criar horários',
-        descricao_imagem:
-          'Página na qual o profissional do corpo clínico pode criar os horários, excluir horários, confirmar que a consulta foi realizada, cancelar um horário que tem paciente agendado'
+        link_imagem: todovue_4,
+        titulo_imagem: 'TodoVue',
+        descricao_imagem: 'Exibindo apenas as atividades finalizadas'
       }
     ],
-    link_deploy: 'https://fullnessclinic.netlify.app/',
-    link_repositório:
-      'https://github.com/mateusrc-dev/clinica_de_saude_frontend?tab=readme-ov-file'
+    link_deploy: 'https://todo-vue-black-two.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/todo-vue'
   }
 ]
 
