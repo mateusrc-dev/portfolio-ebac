@@ -13,10 +13,10 @@ const Sidebar = ({ trocaTema }: Props) => (
       <Avatar />
       <Titulo fontSize={20}>Mateus Carvalho</Titulo>
       <Paragrafo tipo="secundario" fontSize={16}>
-        mateusrc-dev
+        github: mateusrc-dev
       </Paragrafo>
       <Descricao tipo="principal" fontSize={12}>
-        Desenvolvedor Fullstack JAVA
+        Desenvolvedor Web Fullstack
       </Descricao>
       <BotaoTema onClick={trocaTema}>Trocar tema</BotaoTema>
     </SidebarContainer>

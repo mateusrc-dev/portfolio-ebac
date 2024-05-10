@@ -7,10 +7,10 @@ export const Container = styled.div`
 
   .visible {
     opacity: 1;
-    animation: leftAlert 0.5s ease;
+    animation: translateAnimation 0.5s ease;
   }
 
-  @keyframes leftAlert {
+  @keyframes translateAnimation {
     0% {
       opacity: 0;
       transform: translateY(100px);
@@ -78,7 +78,7 @@ export const ComponentImg = styled.div`
   }
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 1;
     span,
     .overlay {
