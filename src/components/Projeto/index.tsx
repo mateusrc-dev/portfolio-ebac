@@ -7,6 +7,7 @@ import {
   Container,
   ContainerImages,
   ContainerTags,
+  IconComponent,
   LinkBotao,
   Modal,
   ModalContent
@@ -17,6 +18,7 @@ import closeIcon from '../../assets/close.png'
 import { ReactNode, useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { Projetos } from '../../containers/Projetos'
+import Tooltip from '../Tooltip'
 
 type ModalState = {
   visibility: boolean
@@ -74,7 +76,14 @@ const Projeto = ({
     <Container>
       <ComponenteScrollReveal>
         <Card>
-          <Titulo>{nome}</Titulo>
+          <Titulo>
+            {nome}{' '}
+            {nome === 'Fulness Clinic' || nome === 'Healthy Tasks' ? (
+              <Tooltip content="Projeto Pessoal">
+                <IconComponent />
+              </Tooltip>
+            ) : null}
+          </Titulo>
           <ContainerImages>
             {imagens.map((item, index) => (
               <ComponentImg

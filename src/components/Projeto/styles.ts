@@ -1,3 +1,4 @@
+import { IoStar } from 'react-icons/io5'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -85,6 +86,13 @@ export const ComponentImg = styled.div`
       opacity: 1;
     }
   }
+`
+
+export const IconComponent = styled(IoStar)`
+  width: 22px;
+  height: 22px;
+  color: #f8c586;
+  transition: all 0.5s ease;
 `
 
 export const ContainerImages = styled.ul`
