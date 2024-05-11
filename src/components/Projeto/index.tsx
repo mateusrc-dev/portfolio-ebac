@@ -118,7 +118,7 @@ const Projeto = ({
         </Card>
       </ComponenteScrollReveal>
       <Modal className={modal.visibility ? 'is-visible' : ''}>
-        <ModalContent className="container">
+        <ModalContent>
           <header>
             <h4>{modal.titulo_imagem}</h4>
             <img src={closeIcon} alt="Ícone de fechar" onClick={closeModal} />

@@ -171,6 +171,10 @@ export const ModalContent = styled.div`
   min-width: 1000px;
   margin: auto;
 
+  @media (max-width: 768px) {
+    min-width: 500px;
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -201,6 +205,10 @@ export const ModalContent = styled.div`
     border: 1px solid ${(props) => props.theme.corDaBorda};
     overflow: hidden;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      min-height: 250px;
+    }
 
     img {
       position: absolute;
