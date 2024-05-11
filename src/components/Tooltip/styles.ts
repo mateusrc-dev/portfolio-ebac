@@ -27,6 +27,7 @@ export const TooltipContainer = styled.span`
   padding: 20px;
   color: ${(props) => props.theme.corDeFundo};
   background: ${(props) => props.theme.corDeFundoBotao};
+  font-weight: bold;
   border-radius: 10px;
   opacity: 0;
   transform: translateY(25px);
