@@ -50,6 +50,14 @@ import mkssistemas_carrinho from '../../assets/mkssistemas_carrinho.png'
 import mkssistemas_confirmacao from '../../assets/mkssistemas_confirmacao.png'
 import mkssistemas_home from '../../assets/mkssistemas_home.png'
 import mkssistemas_itemsnocarrinho from '../../assets/mkssistemas_itemsnocarrinho.png'
+import meutime_escolherligas from '../../assets/meutime_escolherligas.png'
+import meutime_escolherpais from '../../assets/meutime_escolherpais.png'
+import meutime_escolhertime from '../../assets/meutime_escolhertime.png'
+import meutime_estatistica from '../../assets/meutime_estatistica.png'
+import sitepessoal1 from '../../assets/sitepessoal1.png'
+import sitepessoal2 from '../../assets/sitepessoal2.png'
+import sitepessoal3 from '../../assets/sitepessoal3.png'
+import sitepessoal4 from '../../assets/sitepessoal4.png'
 
 export type Projetos = {
   nome: string
@@ -340,6 +348,40 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/mks-sistemas'
   },
   {
+    nome: 'Meu Time',
+    descrição:
+      'Aplicativo no qual o usuário pode visualizar informações do seu time de acordo com o país, liga, campeonato selecionados. Essa aplicação consome dados da Api Football.',
+    tecnologias: ['Typescript', 'NextJs', 'ReactJs', 'Axios'],
+    imagens: [
+      {
+        link_imagem: meutime_escolherpais,
+        titulo_imagem: 'Página para escolher um país',
+        descricao_imagem:
+          'Página para escolher um país que o usuário deseja para acompanhar mais informações sobre os times desse país'
+      },
+      {
+        link_imagem: meutime_escolherligas,
+        titulo_imagem: 'Página de ligas',
+        descricao_imagem:
+          'Página onde o usuário pode escolher qual liga quer acompanhar'
+      },
+      {
+        link_imagem: meutime_escolhertime,
+        titulo_imagem: 'Página para selecionar um time',
+        descricao_imagem:
+          'Página onde o usuário pode selecionar um time para ver os detalhes do time no campeonado'
+      },
+      {
+        link_imagem: meutime_estatistica,
+        titulo_imagem: 'Página de detalhes do time',
+        descricao_imagem:
+          'Página de detalhes do time selecionado onde o usuário pode visualizar quais os jogadores fazem parte do time, quantidade de partidas jogadas no campeonato, quantidade de derrotas, vitórias, quantidades de gols, formação do time, etc.'
+      }
+    ],
+    link_deploy: 'https://meu-timee.netlify.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/meu-time'
+  },
+  {
     nome: 'Github Blog',
     descrição:
       'Aplicativo é um blog onde o usuário pode pesquisar por problemas de um repositório e acompanhar discussões de um repositório. Nesse aplicativo é consumido uma API do Github.',
@@ -374,7 +416,7 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/github-blog'
   },
   {
-    nome: 'Interestelar Movie ',
+    nome: 'Interestelar Movie',
     descrição:
       'Site onde o usuário pode visualizar informações sobre o filme Interestelar, foi utilizado o Bootstrap para criar os elementos da interface, como Navs, Containers, Buttons, Grid.',
     tecnologias: ['Javascript', 'Bootstrap', 'SASS', 'GULP'],
@@ -383,7 +425,7 @@ const projetos: Projetos[] = [
         link_imagem: interestelarmovie_1,
         titulo_imagem: 'Página Home',
         descricao_imagem:
-          'Página inicial do aplicativo onde o usuário um banner do filme interestelar e o cabeçalho do site que some suavemente quando o scroll da página é baixado'
+          'Página inicial do aplicativo onde o usuário pode visualizar um banner do filme interestelar e o cabeçalho do site que some suavemente quando o scroll da página é baixado'
       },
       {
         link_imagem: interestelarmovie_2,
@@ -406,6 +448,40 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://interestelar-movie-ebac.vercel.app/',
     link_repositório: 'https://github.com/mateusrc-dev/interestelar-movie-ebac'
+  },
+  {
+    nome: 'Site Profissional',
+    descrição:
+      'Site com informações sobre o profissional, foi utilizado o Bootstrap para criar os elementos da interface, como Carousel, Accordion, Navs, Containers, Buttons, Forms, Grid.',
+    tecnologias: ['Javascript', 'Bootstrap'],
+    imagens: [
+      {
+        link_imagem: sitepessoal1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Carousel criado com Bootstrap mostrando mais informações sobre o espaço de atendimento para o usuário'
+      },
+      {
+        link_imagem: sitepessoal2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Foi utilizado o Grid do Bootstrap para criar as colunas, o Accordion e o Carousel também foi criado com o Bootstrap para exibir informações do profissional de forma mais confortável'
+      },
+      {
+        link_imagem: sitepessoal3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Nessa parte da página é exibido uma Nav criado com Bootstrap com reflexões acerca do trabalho do profissional'
+      },
+      {
+        link_imagem: sitepessoal4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Nessa parte da página é exibido um formulário criado com o Bootstrap'
+      }
+    ],
+    link_deploy: 'https://site-pessoal-bootstrap.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/site-pessoal-bootstrap'
   },
   {
     nome: 'Todo Vue',
