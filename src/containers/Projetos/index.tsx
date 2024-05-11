@@ -34,6 +34,22 @@ import todovue_1 from '../../assets/todovue_1.png'
 import todovue_2 from '../../assets/todovue_2.png'
 import todovue_3 from '../../assets/todovue_3.png'
 import todovue_4 from '../../assets/todovue_4.png'
+import healthytasks_login from '../../assets/healthytasks_login.png'
+import healthytasks_perfil from '../../assets/healthytasks_perfil.png'
+import healthytasks_atividades from '../../assets/healthytasks_atividades.png'
+import healthytasks_criar from '../../assets/healthytasks_criar.png'
+import githubblog_home from '../../assets/githubblog_home.png'
+import githubblog_home2 from '../../assets/githubblog_home2.png'
+import githubblog_problema from '../../assets/githubblog_problema.png'
+import githubblog_problema2 from '../../assets/githubblog_problema2.png'
+import todotypescript_atividadesconcluidas from '../../assets/todotypescript_atividadesconcluidas.png'
+import todotypescript_atividadescriadas from '../../assets/todotypescript_atividadescriadas.png'
+import todotypescript_criando from '../../assets/todotypescript_criando.png'
+import todotypescript_sematividade from '../../assets/todotypescript_sematividade.png'
+import mkssistemas_carrinho from '../../assets/mkssistemas_carrinho.png'
+import mkssistemas_confirmacao from '../../assets/mkssistemas_confirmacao.png'
+import mkssistemas_home from '../../assets/mkssistemas_home.png'
+import mkssistemas_itemsnocarrinho from '../../assets/mkssistemas_itemsnocarrinho.png'
 
 export type Projetos = {
   nome: string
@@ -85,6 +101,40 @@ const projetos: Projetos[] = [
       'https://github.com/mateusrc-dev/clinica_de_saude_frontend'
   },
   {
+    nome: 'Healthy Tasks',
+    descrição:
+      'Aplicativo no qual usuário pode acessar suas atividades, fazer o ckeck das atividades, acompanhar atividades públicas de outros usuários e o profissional pode criar atividades para seus pacientes.',
+    tecnologias: ['Javascript', 'Typescript', 'ReactJs', 'NextJs'],
+    imagens: [
+      {
+        link_imagem: healthytasks_login,
+        titulo_imagem: 'Página de autenticação',
+        descricao_imagem:
+          'Página na qual o usuário pode realizar autenticação na aplicação como paciente ou como profissional'
+      },
+      {
+        link_imagem: healthytasks_perfil,
+        titulo_imagem: 'Página de perfil',
+        descricao_imagem:
+          'Página na qual o usuário pode preencher as informações do seu perfil, informar sua queixa, informar os profissionais pelos quais é acompanhado, escolher sua atividade favorita, escolher se o perfil vai ser público ou privado, acompanhar a estatística das suas atividades'
+      },
+      {
+        link_imagem: healthytasks_atividades,
+        titulo_imagem: 'Página de atividades',
+        descricao_imagem:
+          'Página na qual o usuário pode acompanhar as atividades pendentes, as atividades realizadas, e as atividades que não foram realizadas e acabou o prazo para realiza-las'
+      },
+      {
+        link_imagem: healthytasks_criar,
+        titulo_imagem: 'Página para criar uma nova atividade',
+        descricao_imagem:
+          'Página na qual o profissional pode criar uma atividade para um paciente inserindo o email dele, pode colocar título, descrição e o prazo para a atividade ser realizada'
+      }
+    ],
+    link_deploy: 'https://healthy-tasks.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/healthy-tasks'
+  },
+  {
     nome: 'Bookwise',
     descrição:
       'Aplicativo que o usuário pode fazer autenticação social através do Google ou GitHub, criar avaliações dos seus livros favoritos e acompanhar a avaliação dos livros realizada por outros usuários.',
@@ -122,7 +172,7 @@ const projetos: Projetos[] = [
     nome: 'Efood',
     descrição:
       'Aplicativo que o usuário pode acessar um restaurante específico, visualizar uma listagem de pratos desse restaurante que podem ser adicionadas no carrinho e finalizar a compra ao preencher o formulário.',
-    tecnologias: ['Javascript', 'TypeScript', 'ReactJs', 'Redux'],
+    tecnologias: ['Javascript', 'Typescript', 'ReactJs', 'Redux'],
     imagens: [
       {
         link_imagem: efood_home,
@@ -154,38 +204,38 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/Efood'
   },
   {
-    nome: 'Coffe Delivery',
+    nome: 'Explorer Food',
     descrição:
-      'Aplicativo que o usuário pode adicionar a quantidade que desejar de café no carrinho, e pode preencher um formulário com seus dados para finalizar a compra, podendo escolher as opções de pagamento.',
-    tecnologias: ['Javascript', 'Typescript', 'ReactJs', 'useContext'],
+      'Aplicativo no qual o usuário pode criar sua conta, se autenticar, adicionar pratos no pedido, adicionar pratos nos favoritos, finalizar um pedido e acompanhar o status do pedido (pendente, a caminho, entregue).',
+    tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
     imagens: [
       {
-        link_imagem: coffeedelivery_home,
+        link_imagem: explorerfood_pratos,
         titulo_imagem: 'Página Home',
         descricao_imagem:
-          'Página inicial do aplicativo onde o usuário pode ver os diferentes tipos de cafés disponíveis e pode adicionar a quantidade que desejar de café no carrinho'
+          'Página inicial onde o usuário pode pesquisar pelos seus pratos favoritos e adiciona-los ao carrinho ou pode favoritar os pratos'
       },
       {
-        link_imagem: coffeedelivery_coffees,
+        link_imagem: explorerfood_pesquisa,
         titulo_imagem: 'Página Home',
         descricao_imagem:
-          'Página inicial do aplicativo onde o usuário pode ver os diferentes tipos de cafés disponíveis e pode adicionar a quantidade que desejar de café no carrinho'
+          'Página inicial onde o usuário pode pesquisar pelos seus pratos favoritos e adiciona-los ao carrinho ou pode favoritar os pratos'
       },
       {
-        link_imagem: coffeedelivery_form,
-        titulo_imagem: 'Página do pedido',
+        link_imagem: explorerfood_pagamento,
+        titulo_imagem: 'Página de pagamento',
         descricao_imagem:
-          'Página do pedido onde o usuário pode manipular a quantidade de itens no carrinho, preencher o formulário para finalizar a compra e escolher entre as opções de pagamento disponíveis'
+          'Página na qual o usuário pode visualizar os detalhes do pedido, finalizar a compra e escolher o modo de pagamento'
       },
       {
-        link_imagem: coffeedelivery_confirmacao,
-        titulo_imagem: 'Página de confirmação do pedido',
+        link_imagem: explorerfood_status,
+        titulo_imagem: 'Página de status dos pedidos',
         descricao_imagem:
-          'Página onde o usuário pode visualizar que o pedido foi realizado com sucesso e conferir os detalhes do seu pedido'
+          'Página na qual o usuário pode acompanhar o status dos pedidos (pendente, a caminho, entregue)'
       }
     ],
-    link_deploy: 'https://coffedelivery.netlify.app/',
-    link_repositório: 'https://github.com/mateusrc-dev/coffe-delivery'
+    link_deploy: 'https://explorerfoodd.netlify.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/front_end_explorer_food'
   },
   {
     nome: 'Ignite Shop',
@@ -222,38 +272,106 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/ignite-shop'
   },
   {
-    nome: 'Explorer Food',
+    nome: 'Coffe Delivery',
     descrição:
-      'Aplicativo no qual o usuário pode criar sua conta, se autenticar, adicionar pratos no pedido, adicionar pratos nos favoritos, finalizar um pedido e acompanhar o status do pedido (pendente, a caminho, entregue).',
-    tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
+      'Aplicativo que o usuário pode adicionar a quantidade que desejar de café no carrinho, e pode preencher um formulário com seus dados para finalizar a compra, podendo escolher as opções de pagamento.',
+    tecnologias: ['Javascript', 'Typescript', 'ReactJs', 'useContext'],
     imagens: [
       {
-        link_imagem: explorerfood_pratos,
+        link_imagem: coffeedelivery_home,
         titulo_imagem: 'Página Home',
         descricao_imagem:
-          'Página inicial onde o usuário pode pesquisar pelos seus pratos favoritos e adiciona-los ao carrinho ou pode favoritar os pratos'
+          'Página inicial do aplicativo onde o usuário pode ver os diferentes tipos de cafés disponíveis e pode adicionar a quantidade que desejar de café no carrinho'
       },
       {
-        link_imagem: explorerfood_pesquisa,
+        link_imagem: coffeedelivery_coffees,
         titulo_imagem: 'Página Home',
         descricao_imagem:
-          'Página inicial onde o usuário pode pesquisar pelos seus pratos favoritos e adiciona-los ao carrinho ou pode favoritar os pratos'
+          'Página inicial do aplicativo onde o usuário pode ver os diferentes tipos de cafés disponíveis e pode adicionar a quantidade que desejar de café no carrinho'
       },
       {
-        link_imagem: explorerfood_pagamento,
-        titulo_imagem: 'Página de pagamento',
+        link_imagem: coffeedelivery_form,
+        titulo_imagem: 'Página do pedido',
         descricao_imagem:
-          'Página na qual o usuário pode visualizar os detalhes do pedido, finalizar a compra e escolher o modo de pagamento'
+          'Página do pedido onde o usuário pode manipular a quantidade de itens no carrinho, preencher o formulário para finalizar a compra e escolher entre as opções de pagamento disponíveis'
       },
       {
-        link_imagem: explorerfood_status,
-        titulo_imagem: 'Página de status dos pedidos',
+        link_imagem: coffeedelivery_confirmacao,
+        titulo_imagem: 'Página de confirmação do pedido',
         descricao_imagem:
-          'Página na qual o usuário pode acompanhar o status dos pedidos (pendente, a caminho, entregue)'
+          'Página onde o usuário pode visualizar que o pedido foi realizado com sucesso e conferir os detalhes do seu pedido'
       }
     ],
-    link_deploy: 'https://explorerfoodd.netlify.app/',
-    link_repositório: 'https://github.com/mateusrc-dev/front_end_explorer_food'
+    link_deploy: 'https://coffedelivery.netlify.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/coffe-delivery'
+  },
+  {
+    nome: 'Mks Sistemas',
+    descrição:
+      'Projeto criado em NextJs e ReactJs onde o usuário pode adicionar produtos no carrinho, manipular a quantidade de produtos, e finalizar a compra. Foi utilizado hooks do React como useContext e useState.',
+    tecnologias: ['Typescript', 'ReactJs', 'NextJs', 'useContext'],
+    imagens: [
+      {
+        link_imagem: mkssistemas_home,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode adicionar produtos no carrinho'
+      },
+      {
+        link_imagem: mkssistemas_itemsnocarrinho,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home com produtos adicionados no carrinho (observar a contagem de itens adicionados no botão do canto superior direito)'
+      },
+      {
+        link_imagem: mkssistemas_carrinho,
+        titulo_imagem: 'Página Home com carrinho aberto',
+        descricao_imagem:
+          'Página Home com carrinho aberto, usuário pode escolher a quantidade de itens e visualizar o preço final'
+      },
+      {
+        link_imagem: mkssistemas_confirmacao,
+        titulo_imagem: 'Página de confirmação do pedido',
+        descricao_imagem:
+          'Página de confirmação do pedido onde o usuário pode visualizar detalhes do pedido como a quantidade de cada item comprado'
+      }
+    ],
+    link_deploy: 'https://mks-sistemass.netlify.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/mks-sistemas'
+  },
+  {
+    nome: 'Github Blog',
+    descrição:
+      'Aplicativo é um blog onde o usuário pode pesquisar por problemas de um repositório e acompanhar discussões de um repositório. Nesse aplicativo é consumido uma API do Github.',
+    tecnologias: ['Typescript', 'Axios', 'ReactHookForm', 'ReactMarkdown'],
+    imagens: [
+      {
+        link_imagem: githubblog_home,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode visualizar os detalhes do perfil do github e as discussões criados no repositório'
+      },
+      {
+        link_imagem: githubblog_home2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode visualizar os detalhes do perfil do github e as discussões criados no repositório'
+      },
+      {
+        link_imagem: githubblog_problema,
+        titulo_imagem: 'Página de detalhes da discussão',
+        descricao_imagem:
+          'Página de detalhes da discussão onde foi usado o react-mark-down para que a linguagem de marcação tenha efeito no texto que foi buscado da API do github'
+      },
+      {
+        link_imagem: githubblog_problema2,
+        titulo_imagem: 'Página de detalhes da discussão no Github',
+        descricao_imagem:
+          'Página de detalhes da discussão no Github para o usuário visualizar a fonte original das informações'
+      }
+    ],
+    link_deploy: 'https://charming-alfajores-ab49c5.netlify.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/github-blog'
   },
   {
     nome: 'Interestelar Movie ',
@@ -318,6 +436,36 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://todo-vue-black-two.vercel.app/',
     link_repositório: 'https://github.com/mateusrc-dev/todo-vue'
+  },
+  {
+    nome: 'ToDoList TypeScript',
+    descrição:
+      'Aplicativo é um blog onde o usuário pode pesquisar por problemas de um repositório e acompanhar discussões de um repositório. Nesse aplicativo é consumido uma API do Github.',
+    tecnologias: ['Typescript', 'Javascript', 'useState'],
+    imagens: [
+      {
+        link_imagem: todotypescript_sematividade,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com nenhuma atividade criada'
+      },
+      {
+        link_imagem: todotypescript_criando,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com o usuário criando uma nova atividade'
+      },
+      {
+        link_imagem: todotypescript_atividadescriadas,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home algumas atividades criadas'
+      },
+      {
+        link_imagem: todotypescript_atividadesconcluidas,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com todas as atividades concluídas'
+      }
+    ],
+    link_deploy: 'https://todo-list-typescriptt.netlify.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/ToDo-list-TypeScript'
   }
 ]
 
