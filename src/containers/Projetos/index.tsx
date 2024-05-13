@@ -58,6 +58,22 @@ import sitepessoal1 from '../../assets/sitepessoal1.png'
 import sitepessoal2 from '../../assets/sitepessoal2.png'
 import sitepessoal3 from '../../assets/sitepessoal3.png'
 import sitepessoal4 from '../../assets/sitepessoal4.png'
+import jQueryLista from '../../assets/jQueryLista.png'
+import jQueryLista_atividadesCriadas from '../../assets/jQueryLista_atividadesCriadas.png'
+import jQueryLista_check from '../../assets/jQueryLista_check.png'
+import jQueryLista_novaTarefa from '../../assets/jQueryLista_novaTarefa.png'
+import responsivo1 from '../../assets/responsivo1.png'
+import responsivo2 from '../../assets/responsivo2.png'
+import responsivo3 from '../../assets/responsivo3.png'
+import responsivo4 from '../../assets/responsivo4.png'
+import EbacTechTalks1 from '../../assets/EbacTechTalks1.png'
+import EbacTechTalks2 from '../../assets/EbacTechTalks2.png'
+import EbacTechTalks3 from '../../assets/EbacTechTalks3.png'
+import EbacTechTalks4 from '../../assets/EbacTechTalks4.png'
+import disneyplus1 from '../../assets/disneyplus1.png'
+import disneyplus2 from '../../assets/disneyplus2.png'
+import disneyplus3 from '../../assets/disneyplus3.png'
+import disneyplus4 from '../../assets/disneyplus4.png'
 
 export type Projetos = {
   nome: string
@@ -450,6 +466,39 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/interestelar-movie-ebac'
   },
   {
+    nome: 'Clone Disney Plus',
+    descrição:
+      'Clone da página do Disney Plus. Foi usada algumas tecnologias como Gulp para automatizar a compressão de imagens, a transformação e compressão de arquivos scss em css com gulp-sass, etc.',
+    tecnologias: ['Javascript', 'Bootstrap'],
+    imagens: [
+      {
+        link_imagem: disneyplus1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Banner exibindo informações sobre a assinatura do Disney Plus'
+      },
+      {
+        link_imagem: disneyplus2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Foi utilizado o Grid do Bootstrap para criar as colunas que mostram as informações dos diferentes planos'
+      },
+      {
+        link_imagem: disneyplus3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Accordion criado com o Bootstrap'
+      },
+      {
+        link_imagem: disneyplus4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Foi criado o elemento Nav com o Bootstrap e foi usado o Grid do Bootstrap para criar a organização dos elementos'
+      }
+    ],
+    link_deploy: 'https://clone-disneyplus-lilac-chi.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/clone_disneyplus'
+  },
+  {
     nome: 'Site Profissional',
     descrição:
       'Site com informações sobre o profissional, foi utilizado o Bootstrap para criar os elementos da interface, como Carousel, Accordion, Navs, Containers, Buttons, Forms, Grid.',
@@ -482,6 +531,36 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://site-pessoal-bootstrap.vercel.app/',
     link_repositório: 'https://github.com/mateusrc-dev/site-pessoal-bootstrap'
+  },
+  {
+    nome: 'Ebac Tech Talks',
+    descrição:
+      'Nesse projeto ocorre uma chamada para um evento. Foi usado o framework parcel para automatizar a compressão de arquivos como imagens, aquivo js e transformar arquivo scss para css.',
+    tecnologias: ['Javascript', 'SCSS'],
+    imagens: [
+      {
+        link_imagem: EbacTechTalks1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página home com tempo do evento esgotado'
+      },
+      {
+        link_imagem: EbacTechTalks4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página home com tempo do evento não expirado'
+      },
+      {
+        link_imagem: EbacTechTalks2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página home mostrando mais detalhes sobre o evento'
+      },
+      {
+        link_imagem: EbacTechTalks3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página home mostrando mais detalhes sobre o evento'
+      }
+    ],
+    link_deploy: 'https://ebac-tech-talks-seven-flame.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/ebac_tech_talks'
   },
   {
     nome: 'Todo Vue',
@@ -542,6 +621,66 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://todo-list-typescriptt.netlify.app/',
     link_repositório: 'https://github.com/mateusrc-dev/ToDo-list-TypeScript'
+  },
+  {
+    nome: 'Lista de Tarefas jQuery',
+    descrição:
+      'Aplicativo onde o usuário pode criar atividades e ao nelas a atividade é riscada para indicar que foi finalizada. O jQuery ajuda a selecionar elementos da DOM e manipular eles de forma mais simplificada.',
+    tecnologias: ['Javascript', 'jQuery'],
+    imagens: [
+      {
+        link_imagem: jQueryLista,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com nenhuma atividade criada'
+      },
+      {
+        link_imagem: jQueryLista_novaTarefa,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com o usuário criando uma nova atividade'
+      },
+      {
+        link_imagem: jQueryLista_atividadesCriadas,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home algumas atividades criadas'
+      },
+      {
+        link_imagem: jQueryLista_check,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com algumas atividades concluídas'
+      }
+    ],
+    link_deploy: 'https://lista-de-tarefas-jquery-gamma.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/lista-de-tarefas-jquery'
+  },
+  {
+    nome: 'CSS Responsivo',
+    descrição:
+      'Aplicativo para aprender conceitos sobre responsividade no CSS. Foi utilizada a regra @media para a interface se reorganizar a partir de diferentes larguras de telas.',
+    tecnologias: ['CSS', 'Responsividade'],
+    imagens: [
+      {
+        link_imagem: responsivo1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página home sem responsividade'
+      },
+      {
+        link_imagem: responsivo2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página home com responsividade'
+      },
+      {
+        link_imagem: responsivo3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página home com responsividade'
+      },
+      {
+        link_imagem: responsivo4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página home com responsividade'
+      }
+    ],
+    link_deploy: 'https://exercicio-css-responsivo-eight-snowy.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/exercicio-css-responsivo'
   }
 ]
 

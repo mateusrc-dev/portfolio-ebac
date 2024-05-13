@@ -110,6 +110,12 @@ export const ComponentTag = styled.span`
   border-radius: 8px;
   font-weight: bold;
   font-size: 8px;
+
+  @media (max-width: 990px) {
+    padding: 2px;
+    font-size: 7px;
+    border-radius: 4px;
+  }
 `
 
 export const ContainerTags = styled.span`
@@ -171,8 +177,16 @@ export const ModalContent = styled.div`
   min-width: 1000px;
   margin: auto;
 
+  @media (max-width: 1000px) {
+    min-width: 700px;
+  }
+
   @media (max-width: 768px) {
     min-width: 500px;
+  }
+
+  @media (max-width: 505px) {
+    min-width: 300px;
   }
 
   header {
@@ -206,8 +220,16 @@ export const ModalContent = styled.div`
     overflow: hidden;
     cursor: pointer;
 
+    @media (max-width: 1000px) {
+      min-height: 350px;
+    }
+
     @media (max-width: 768px) {
       min-height: 250px;
+    }
+
+    @media (max-width: 505px) {
+      min-height: 150px;
     }
 
     img {

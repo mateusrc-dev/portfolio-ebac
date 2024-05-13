@@ -30,7 +30,7 @@ type ModalState = {
 const ComponenteScrollReveal = ({ children }: { children: ReactNode }) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Dispara a animação apenas uma vez
-    threshold: 0.5 // Dispara a animação quando 50% do elemento estiver visível
+    threshold: 0.4 // Dispara a animação quando 50% do elemento estiver visível
   })
 
   const [isVisible, setIsVisible] = useState(false)
