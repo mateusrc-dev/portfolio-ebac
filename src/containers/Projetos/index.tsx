@@ -74,6 +74,26 @@ import disneyplus1 from '../../assets/disneyplus1.png'
 import disneyplus2 from '../../assets/disneyplus2.png'
 import disneyplus3 from '../../assets/disneyplus3.png'
 import disneyplus4 from '../../assets/disneyplus4.png'
+import dtmoney1 from '../../assets/dtmoney1.png'
+import dtmoney2 from '../../assets/dtmoney2.png'
+import dtmoney3 from '../../assets/dtmoney3.png'
+import dtmoney4 from '../../assets/dtmoney4.png'
+import eplay1 from '../../assets/eplay1.png'
+import eplay2 from '../../assets/eplay2.png'
+import eplay3 from '../../assets/eplay5.png'
+import eplay4 from '../../assets/eplay6.png'
+import movies1 from '../../assets/movies1.png'
+import movies2 from '../../assets/movies2.png'
+import movies3 from '../../assets/movies3.png'
+import movies4 from '../../assets/movie4.png'
+import ebacsports1 from '../../assets/ebacsports1.png'
+import ebacsports2 from '../../assets/ebacsports2.png'
+import ebacsports3 from '../../assets/ebacsports3.png'
+import ebacsports4 from '../../assets/ebacsports4.png'
+import ignitetimer1 from '../../assets/ignitetimer1.png'
+import ignitetimer2 from '../../assets/ignitetimer2.png'
+import ignitetimer3 from '../../assets/ignitetimer3.png'
+import ignitetimer4 from '../../assets/ignitetimer4.png'
 
 export type Projetos = {
   nome: string
@@ -228,6 +248,40 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/Efood'
   },
   {
+    nome: 'Eplay',
+    descrição:
+      'Aplicativo que o usuário pode visualizar os jogos disponíveis, visualizar os detalhes desse jogo incluindo uma galeria de imagens, adiciona-lo no carrinho e finalizar a compra ao preencher o formulário.',
+    tecnologias: ['Javascript', 'Typescript', 'ReactJs', 'Redux'],
+    imagens: [
+      {
+        link_imagem: eplay1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página inicial do aplicativo onde o usuário visualizar um banner de um jogo destaque do dia em promoção'
+      },
+      {
+        link_imagem: eplay2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página inicial na qual o usuário pode visualizar a sessão de Promoções e Em breve'
+      },
+      {
+        link_imagem: eplay3,
+        titulo_imagem: 'Página de detalhes do restaurante com carrinho aberto',
+        descricao_imagem:
+          'Página de detalhes do produto com o carrinho aberto mostrando os produtos adicionados no carrinho'
+      },
+      {
+        link_imagem: eplay4,
+        titulo_imagem: 'Página de finalização do pedido',
+        descricao_imagem:
+          'Página na qual o usuário pode visualizar e preencher o formulário (que possui validação nos campos) para finalizar o pedido'
+      }
+    ],
+    link_deploy: 'https://eplay-lilac-nine.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/eplay'
+  },
+  {
     nome: 'Explorer Food',
     descrição:
       'Aplicativo no qual o usuário pode criar sua conta, se autenticar, adicionar pratos no pedido, adicionar pratos nos favoritos, finalizar um pedido e acompanhar o status do pedido (pendente, a caminho, entregue).',
@@ -258,8 +312,42 @@ const projetos: Projetos[] = [
           'Página na qual o usuário pode acompanhar o status dos pedidos (pendente, a caminho, entregue)'
       }
     ],
-    link_deploy: 'https://explorerfoodd.netlify.app/',
+    link_deploy: '',
     link_repositório: 'https://github.com/mateusrc-dev/front_end_explorer_food'
+  },
+  {
+    nome: 'RocketMovies',
+    descrição:
+      'Aplicativo no qual o usuário pode criar sua conta, se autenticar, adicionar seus filmes preferidos, adicionar tags aos seus filmes, ver detalhes dos filmes e excluir um filme caso desejar.',
+    tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
+    imagens: [
+      {
+        link_imagem: movies1,
+        titulo_imagem: 'Página de Autenticação',
+        descricao_imagem:
+          'Página onde o usuário pode se autenticar e navegar para a página de criar uma nova conta'
+      },
+      {
+        link_imagem: movies2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página inicial onde o usuário pode visualizar os filmes já criados, com nome do filme, comentário e nota, além de poder navegar para a página de detalhes do filme ao clicar nele e fazer busca'
+      },
+      {
+        link_imagem: movies3,
+        titulo_imagem: 'Página de criação de um novo filme',
+        descricao_imagem:
+          'Página na qual o usuário criar um novo filme inserindo o nome dele, uma nota, uma observação e tags'
+      },
+      {
+        link_imagem: movies4,
+        titulo_imagem: 'Página de detalhes',
+        descricao_imagem:
+          'Página onde o usuário pode visualizar detalhes do filme, incluindo a data de sua criação'
+      }
+    ],
+    link_deploy: '',
+    link_repositório: 'https://github.com/mateusrc-dev/rocketmovies'
   },
   {
     nome: 'Ignite Shop',
@@ -398,6 +486,72 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/meu-time'
   },
   {
+    nome: 'DT Money',
+    descrição:
+      'Aplicativo que ajuda o usuário a controlar entradas e saídas de transações financeiras. Foi usado os hooks useState, useEffect, useCallback e o server-json para criar um backend simulado no frontend.',
+    tecnologias: ['Typescript', 'ReactJs', 'Axios'],
+    imagens: [
+      {
+        link_imagem: dtmoney1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Exibindo as transações já criadas que estavam salvas no aquivo "server.json" que simula um backend'
+      },
+      {
+        link_imagem: dtmoney2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Exibindo a segunda página - o aplicativo possui uma paginação onde é exibido no máximo 5 transações por página'
+      },
+      {
+        link_imagem: dtmoney3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Exibindo a criação de uma nova transação - podemos especificar se é uma transação de entrada ou saída'
+      },
+      {
+        link_imagem: dtmoney4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Fazendo uma pesquisa e exibindo apenas as transações buscadas'
+      }
+    ],
+    link_deploy: '',
+    link_repositório: 'https://github.com/mateusrc-dev/dt-money'
+  },
+  {
+    nome: 'Ignite Timer',
+    descrição:
+      'Aplicativo onde o usuário pode escolher o tempo e a atividade que irá realizar durante esse tempo. O aplicativo também guarda um histórico de atividades do usuário e o status dessas atividades.',
+    tecnologias: ['Typescript', 'ReactJs'],
+    imagens: [
+      {
+        link_imagem: ignitetimer1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home sem nenhuma atividade criada e com timer zerado'
+      },
+      {
+        link_imagem: ignitetimer2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home - criando uma nova atividade'
+      },
+      {
+        link_imagem: ignitetimer3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Atividade criada e timer sendo executado'
+      },
+      {
+        link_imagem: ignitetimer4,
+        titulo_imagem: 'Página Histórico',
+        descricao_imagem:
+          'Exibindo o histórico de atividades realizadas com os respectivos status'
+      }
+    ],
+    link_deploy: 'https://ignite-timerr.netlify.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/ignite-timer'
+  },
+  {
     nome: 'Github Blog',
     descrição:
       'Aplicativo é um blog onde o usuário pode pesquisar por problemas de um repositório e acompanhar discussões de um repositório. Nesse aplicativo é consumido uma API do Github.',
@@ -430,6 +584,40 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://charming-alfajores-ab49c5.netlify.app/',
     link_repositório: 'https://github.com/mateusrc-dev/github-blog'
+  },
+  {
+    nome: 'Ebac Sports',
+    descrição:
+      'Aplicativo que foi criado em ReactJs, Typescriot e ReduxJs onde o usuário pode visualizar produtos, adicionar e remover os produtos do carrinho e dos favoritos.',
+    tecnologias: ['Typescript', 'ReactJs', 'ReduxJs'],
+    imagens: [
+      {
+        link_imagem: ebacsports1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode visualizar os produtos'
+      },
+      {
+        link_imagem: ebacsports2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home com alguns produtos adicionados no carrinho e favoritados'
+      },
+      {
+        link_imagem: ebacsports3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Exibindo mensagem que o produto já foi adicionado indicando que existe uma validação que o produto só pode ser adicionado uma vez'
+      },
+      {
+        link_imagem: ebacsports4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home com alguns produtos adicionados no carrinho e favoritados'
+      }
+    ],
+    link_deploy: 'https://ebac-sports-sigma.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/ebac_sports'
   },
   {
     nome: 'Interestelar Movie',

@@ -112,9 +112,11 @@ const Projeto = ({
           <LinkBotao href={link_repositório} target="_blank">
             Ver repositório no GitHub
           </LinkBotao>
-          <LinkBotao href={link_deploy} target="_blank">
-            Ver Deploy
-          </LinkBotao>
+          {link_deploy.length !== 0 && (
+            <LinkBotao href={link_deploy} target="_blank">
+              Ver Deploy
+            </LinkBotao>
+          )}
         </Card>
       </ComponenteScrollReveal>
       <Modal className={modal.visibility ? 'is-visible' : ''}>
