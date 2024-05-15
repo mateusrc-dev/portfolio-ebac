@@ -94,6 +94,10 @@ import ignitetimer1 from '../../assets/ignitetimer1.png'
 import ignitetimer2 from '../../assets/ignitetimer2.png'
 import ignitetimer3 from '../../assets/ignitetimer3.png'
 import ignitetimer4 from '../../assets/ignitetimer4.png'
+import sistemaescolar1 from '../../assets/sistemaescolar1.png'
+import sistemaescolar2 from '../../assets/sistemaescolar2.png'
+import sistemaescolar3 from '../../assets/sistemaescolar3.png'
+import sistemaescolar4 from '../../assets/sistemaescolar4.png'
 
 export type Projetos = {
   nome: string
@@ -484,6 +488,42 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://meu-timee.netlify.app/',
     link_repositório: 'https://github.com/mateusrc-dev/meu-time'
+  },
+  {
+    nome: 'Sistema Escolar',
+    descrição:
+      'Aplicativo consiste em um sistema escolar onde o usuário pode cadastrar diretores, docentes, alunos, disciplinas e turmas. Nas turmas o usuário pode vincular docentes, disciplinas e alunos a turma.',
+    tecnologias: ['Javascript', 'ReactJs', 'NodeJs'],
+    imagens: [
+      {
+        link_imagem: sistemaescolar1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página onde o usuário pode navegar para páginas de criação de docentes, alunos, diretores, turmas, disciplinas'
+      },
+      {
+        link_imagem: sistemaescolar2,
+        titulo_imagem: 'Página de turmas',
+        descricao_imagem:
+          'Página onde o usuário pode visualizar as turmas criadas (as páginas de alunos, docentes, diretores, disciplinas segue o mesmo padrão) e os alunos e docentes vinculados a uma turma e nevagar para a página de criação de uma nova turma'
+      },
+      {
+        link_imagem: sistemaescolar3,
+        titulo_imagem: 'Página de criação de uma nova turma',
+        descricao_imagem:
+          'Página onde o usuário criar uma nova turma inserindo informações como nome da turma, pode vincular docentes com disciplinas a turma, e vincular alunos a turma'
+      },
+      {
+        link_imagem: sistemaescolar4,
+        titulo_imagem:
+          'Página de turmas com modal dos alunos matriculados aberto',
+        descricao_imagem:
+          'Página de turmas onde o usuário pode visualizar os alunos vinculados e uma turma e também os docentes com suas respectivas disciplinas vinculados a turma'
+      }
+    ],
+    link_deploy: '',
+    link_repositório:
+      'https://github.com/mateusrc-dev/sistema-escolar-front-end'
   },
   {
     nome: 'DT Money',
