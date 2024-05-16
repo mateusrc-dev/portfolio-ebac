@@ -110,6 +110,18 @@ import meuscontatos1 from '../../assets/meuscontatos1.png'
 import meuscontatos2 from '../../assets/meuscontatos2.png'
 import meuscontatos3 from '../../assets/meuscontatos3.png'
 import meuscontatos4 from '../../assets/meuscontatos4.png'
+import minhastarefas1 from '../../assets/minhastarefas1.png'
+import minhastarefas2 from '../../assets/minhastarefas2.png'
+import minhastarefas3 from '../../assets/minhastarefas3.png'
+import minhastarefas4 from '../../assets/minhastarefas4.png'
+import sorteador1 from '../../assets/sorteador1.png'
+import sorteador2 from '../../assets/sorteador2.png'
+import sorteador3 from '../../assets/sorteador3.png'
+import sorteador4 from '../../assets/sorteador4.png'
+import imcreact1 from '../../assets/imcreact1.png'
+import imcreact2 from '../../assets/imcreact2.png'
+import imcreact3 from '../../assets/imcreact3.png'
+import imcreact4 from '../../assets/imcreact4.png'
 
 export type Projetos = {
   nome: string
@@ -672,6 +684,39 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/ignite-feed-ts'
   },
   {
+    nome: 'Minhas Tarefas',
+    descrição:
+      'Aplicativo que foi criado em Typescript, ReactJs e ReduxJs onde o usuário pode adicionar um novo contato ao navegar para uma página de criação clicando no botão "+", editar e excluir os contatos.',
+    tecnologias: ['Typescript', 'ReactJs', 'ReduxJs'],
+    imagens: [
+      {
+        link_imagem: minhastarefas1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode visualizar as tarefas criados, pode visualizar um resumo das tarefas urgentes, pendentes, importantes, concluídas'
+      },
+      {
+        link_imagem: minhastarefas2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home - usuário clicou no check de algumas atividades e a tag antes pendente muda para concluída'
+      },
+      {
+        link_imagem: minhastarefas3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Usuário clicou no botão fixo "+" no canto inferior direito da tela Home e navegou para a página de criação de uma nova atividade e está preenchendo os campos da nova atividade'
+      },
+      {
+        link_imagem: minhastarefas4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com a nova atividade criada'
+      }
+    ],
+    link_deploy: 'https://minhas-tarefas-sand.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/minhas-tarefas'
+  },
+  {
     nome: 'Meus Contatos',
     descrição:
       'Aplicativo que foi criado em Typescript, ReactJs e ReduxJs onde o usuário pode adicionar um novo contato ao navegar para uma página de criação clicando no botão "+", editar e excluir os contatos.',
@@ -737,40 +782,6 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://ebac-sports-sigma.vercel.app/',
     link_repositório: 'https://github.com/mateusrc-dev/ebac_sports'
-  },
-  {
-    nome: 'Github Perfil',
-    descrição:
-      'Aplicativo que foi criado em ReactJs onde o usuário pode buscar por um usuário no Github e exibir informações desse usuário como nome, foto e uma lista de repositórios.',
-    tecnologias: ['Javascript', 'ReactJs', 'useEffect', 'useState'],
-    imagens: [
-      {
-        link_imagem: githubperfil1,
-        titulo_imagem: 'Página Home',
-        descricao_imagem:
-          'Página Home onde o usuário pode buscar por informações de um usuário do Github'
-      },
-      {
-        link_imagem: githubperfil2,
-        titulo_imagem: 'Página Home',
-        descricao_imagem:
-          'Página Home - usuário digitou o nome do usuário do github no input e tirou a seleção do input para começar a carregar as informações'
-      },
-      {
-        link_imagem: githubperfil3,
-        titulo_imagem: 'Página Home',
-        descricao_imagem:
-          'Exibindo as informações do usuário pesquisado - nome, foto, lista de repositórios'
-      },
-      {
-        link_imagem: githubperfil4,
-        titulo_imagem: 'Página Home',
-        descricao_imagem:
-          'Exibindo as informações do usuário pesquisado - nome, foto, lista de repositórios'
-      }
-    ],
-    link_deploy: 'https://github-perfil-nine.vercel.app/',
-    link_repositório: 'https://github.com/mateusrc-dev/github-perfil'
   },
   {
     nome: 'Interestelar Movie',
@@ -904,10 +915,41 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/ebac_tech_talks'
   },
   {
+    nome: 'Sorteador',
+    descrição:
+      'Nesse projeto criamos um sorteador onde o usuário pode escolher entre quais números (ex. entre 0 e 10) deseja sortear. Nesse projeto foi usado o grunt para automatizar tarefas (ex. comprimir arquivos js).',
+    tecnologias: ['Javascript', 'Grunt', 'Less'],
+    imagens: [
+      {
+        link_imagem: sorteador1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página home, o usuário pode escolher qual o número máximo para ser realizado o sorteio'
+      },
+      {
+        link_imagem: sorteador2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Sorteio realizado com o número máximo 2'
+      },
+      {
+        link_imagem: sorteador3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Usuário alterando o número máximo para 10'
+      },
+      {
+        link_imagem: sorteador4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Sorteio realizado com o número máximo 10'
+      }
+    ],
+    link_deploy: 'https://sorteador-grunt-nine-delta.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/sorteador-grunt'
+  },
+  {
     nome: 'Todo Vue',
     descrição:
       'Aplicativo onde o usuário pode adicionar atividades, visualizar quantas atividades estão pendentes, e também o usuário tem as opções de filtrar as atividades (todas tarefas, pendentes, finalizadas).',
-    tecnologias: ['Javascript', 'Vue', 'HTML'],
+    tecnologias: ['Javascript', 'VueJs'],
     imagens: [
       {
         link_imagem: todovue_1,
@@ -962,6 +1004,74 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://todo-list-typescriptt.netlify.app/',
     link_repositório: 'https://github.com/mateusrc-dev/ToDo-list-TypeScript'
+  },
+  {
+    nome: 'Github Perfil',
+    descrição:
+      'Aplicativo que foi criado em ReactJs onde o usuário pode buscar por um usuário no Github e exibir informações desse usuário como nome, foto e uma lista de repositórios.',
+    tecnologias: ['Javascript', 'ReactJs', 'useEffect', 'useState'],
+    imagens: [
+      {
+        link_imagem: githubperfil1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode buscar por informações de um usuário do Github'
+      },
+      {
+        link_imagem: githubperfil2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home - usuário digitou o nome do usuário do github no input e tirou a seleção do input para começar a carregar as informações'
+      },
+      {
+        link_imagem: githubperfil3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Exibindo as informações do usuário pesquisado - nome, foto, lista de repositórios'
+      },
+      {
+        link_imagem: githubperfil4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Exibindo as informações do usuário pesquisado - nome, foto, lista de repositórios'
+      }
+    ],
+    link_deploy: 'https://github-perfil-nine.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/github-perfil'
+  },
+  {
+    nome: 'IMC React',
+    descrição:
+      'Aplicativo onde o usuário pode fazer o cálculo do seu IMC. Foi usado o ReactJs, utilizamos o hook useState para criar estados onde armazenamos informações como peso e altura do usuário.',
+    tecnologias: ['ReactJs', 'Javascript', 'useState'],
+    imagens: [
+      {
+        link_imagem: imcreact1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home com nenhum calculo de IMC realizado e campos vazios'
+      },
+      {
+        link_imagem: imcreact2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home com os campos de peso e altura preenchidos'
+      },
+      {
+        link_imagem: imcreact3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home com o cálculo IMC realizado após o usuário clicar em "Calcular" - surge uma tabela com o resultado'
+      },
+      {
+        link_imagem: imcreact4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home com o cálculo IMC realizado após o usuário clicar em "Calcular" - surge uma tabela com o resultado'
+      }
+    ],
+    link_deploy: 'https://imc-react-ebac-roan.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/imc-react-EBAC'
   },
   {
     nome: 'Lista de Tarefas jQuery',
