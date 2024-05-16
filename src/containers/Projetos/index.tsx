@@ -98,6 +98,18 @@ import sistemaescolar1 from '../../assets/sistemaescolar1.png'
 import sistemaescolar2 from '../../assets/sistemaescolar2.png'
 import sistemaescolar3 from '../../assets/sistemaescolar3.png'
 import sistemaescolar4 from '../../assets/sistemaescolar4.png'
+import ignitefeed1 from '../../assets/ignitefeed1.png'
+import ignitefeed2 from '../../assets/ignitefeed2.png'
+import ignitefeed3 from '../../assets/ignitefeed3.png'
+import ignitefeed4 from '../../assets/ignitefeed4.png'
+import githubperfil1 from '../../assets/githubperfil1.png'
+import githubperfil2 from '../../assets/githubperfil2.png'
+import githubperfil3 from '../../assets/githubperfil3.png'
+import githubperfil4 from '../../assets/githubperfil4.png'
+import meuscontatos1 from '../../assets/meuscontatos1.png'
+import meuscontatos2 from '../../assets/meuscontatos2.png'
+import meuscontatos3 from '../../assets/meuscontatos3.png'
+import meuscontatos4 from '../../assets/meuscontatos4.png'
 
 export type Projetos = {
   nome: string
@@ -626,6 +638,73 @@ const projetos: Projetos[] = [
     link_repositório: 'https://github.com/mateusrc-dev/github-blog'
   },
   {
+    nome: 'Ignite Feed',
+    descrição:
+      'Aplicativo consiste em uma rede social na qual o usuário pode interagir com as publicações comentando, e curtindo/aplaudindo os comentários de outros usuários.',
+    tecnologias: ['Typescript', 'ReactJs'],
+    imagens: [
+      {
+        link_imagem: ignitefeed1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode visualizar as publicações e comentá-las'
+      },
+      {
+        link_imagem: ignitefeed2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário selecionou o input para digitar um novo comentário, aparece um botão quando o input é selecionado, mas o botão fica desabilitado enquando não tem nada digitado no input'
+      },
+      {
+        link_imagem: ignitefeed3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Quando o usuário digita informações no input, automaticamente o botão fica habilitado para o usuário interagir com ele'
+      },
+      {
+        link_imagem: ignitefeed4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Após o clique  do botão "Publicar", o comentário é criado, é possível perceber que existe um botão para aplaudir, a cada clique nesse botão é somado + 1'
+      }
+    ],
+    link_deploy: 'https://ignite-feed-ts-lac.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/ignite-feed-ts'
+  },
+  {
+    nome: 'Meus Contatos',
+    descrição:
+      'Aplicativo que foi criado em Typescript, ReactJs e ReduxJs onde o usuário pode adicionar um novo contato ao navegar para uma página de criação clicando no botão "+", editar e excluir os contatos.',
+    tecnologias: ['Typescript', 'ReactJs', 'ReduxJs'],
+    imagens: [
+      {
+        link_imagem: meuscontatos1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode visualizar os contatos criados'
+      },
+      {
+        link_imagem: meuscontatos2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home - usuário clicou no botão editar (o botão altera para a cor verde e o texto muda para "salvar") e está alterando algumas informações do contato'
+      },
+      {
+        link_imagem: meuscontatos3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Usuário clicou no botão fixo "+" no canto inferior direito da tela Home e navegou para a página de criação de novo contato e está preenchendo os campos do novo contato'
+      },
+      {
+        link_imagem: meuscontatos4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com o novo contato criado'
+      }
+    ],
+    link_deploy: 'https://meus-contatos-blush.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/meus-contatos'
+  },
+  {
     nome: 'Ebac Sports',
     descrição:
       'Aplicativo que foi criado em ReactJs, Typescriot e ReduxJs onde o usuário pode visualizar produtos, adicionar e remover os produtos do carrinho e dos favoritos.',
@@ -658,6 +737,40 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://ebac-sports-sigma.vercel.app/',
     link_repositório: 'https://github.com/mateusrc-dev/ebac_sports'
+  },
+  {
+    nome: 'Github Perfil',
+    descrição:
+      'Aplicativo que foi criado em ReactJs onde o usuário pode buscar por um usuário no Github e exibir informações desse usuário como nome, foto e uma lista de repositórios.',
+    tecnologias: ['Javascript', 'ReactJs', 'useEffect', 'useState'],
+    imagens: [
+      {
+        link_imagem: githubperfil1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home onde o usuário pode buscar por informações de um usuário do Github'
+      },
+      {
+        link_imagem: githubperfil2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home - usuário digitou o nome do usuário do github no input e tirou a seleção do input para começar a carregar as informações'
+      },
+      {
+        link_imagem: githubperfil3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Exibindo as informações do usuário pesquisado - nome, foto, lista de repositórios'
+      },
+      {
+        link_imagem: githubperfil4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Exibindo as informações do usuário pesquisado - nome, foto, lista de repositórios'
+      }
+    ],
+    link_deploy: 'https://github-perfil-nine.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/github-perfil'
   },
   {
     nome: 'Interestelar Movie',
