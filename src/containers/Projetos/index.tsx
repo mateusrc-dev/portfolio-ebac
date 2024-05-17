@@ -122,6 +122,10 @@ import imcreact1 from '../../assets/imcreact1.png'
 import imcreact2 from '../../assets/imcreact2.png'
 import imcreact3 from '../../assets/imcreact3.png'
 import imcreact4 from '../../assets/imcreact4.png'
+import gitfav1 from '../../assets/gitfav1.png'
+import gitfav2 from '../../assets/gitfav2.png'
+import gitfav3 from '../../assets/gitfav3.png'
+import gitfav4 from '../../assets/gitfav4.png'
 
 export type Projetos = {
   nome: string
@@ -1049,7 +1053,7 @@ const projetos: Projetos[] = [
         link_imagem: imcreact1,
         titulo_imagem: 'Página Home',
         descricao_imagem:
-          'Página Home com nenhum calculo de IMC realizado e campos vazios'
+          'Página Home com nenhum cálculo de IMC realizado e campos vazios'
       },
       {
         link_imagem: imcreact2,
@@ -1072,6 +1076,37 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://imc-react-ebac-roan.vercel.app/',
     link_repositório: 'https://github.com/mateusrc-dev/imc-react-EBAC'
+  },
+  {
+    nome: 'Git Fav',
+    descrição:
+      'Aplicativo no qual o usuário pode adicionar seus usuários favoritos do Github. Ele pode digitar o username do usuário e favoritar. Foi utilizado a API do Github para buscar as informações.',
+    tecnologias: ['Javascript', 'Promises', 'localStorage'],
+    imagens: [
+      {
+        link_imagem: gitfav1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com nenhum usuário favorito adicionado'
+      },
+      {
+        link_imagem: gitfav2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com alguns usuários adicionados'
+      },
+      {
+        link_imagem: gitfav3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Página Home com alguns usuários adicionados'
+      },
+      {
+        link_imagem: gitfav4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem:
+          'Página Home com alguns usuários adicionados - deletando um usuário'
+      }
+    ],
+    link_deploy: 'https://gitfav-mocha.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/gitfav'
   },
   {
     nome: 'Lista de Tarefas jQuery',
