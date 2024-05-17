@@ -126,6 +126,10 @@ import gitfav1 from '../../assets/gitfav1.png'
 import gitfav2 from '../../assets/gitfav2.png'
 import gitfav3 from '../../assets/gitfav3.png'
 import gitfav4 from '../../assets/gitfav4.png'
+import focustimer1 from '../../assets/focustimer1.png'
+import focustimer2 from '../../assets/focustimer2.png'
+import focustimer3 from '../../assets/focustimer3.png'
+import focustimer4 from '../../assets/focustimer4.png'
 
 export type Projetos = {
   nome: string
@@ -1137,6 +1141,36 @@ const projetos: Projetos[] = [
     ],
     link_deploy: 'https://lista-de-tarefas-jquery-gamma.vercel.app/',
     link_repositório: 'https://github.com/mateusrc-dev/lista-de-tarefas-jquery'
+  },
+  {
+    nome: 'FocusTimer 2.0',
+    descrição:
+      'Programa tem um temporizador que é ativado ao clicar em play, o tempo é alterado ao clicar nos botões "+" e  "-", as músicas são ativadas de acordo com o botão que for clicado (floresta, cafeteria, fogueira, chuva).',
+    tecnologias: ['Javascript', 'HTML', 'CSS'],
+    imagens: [
+      {
+        link_imagem: focustimer1,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Aplicativo FocusTimer 2.0'
+      },
+      {
+        link_imagem: focustimer2,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Aplicativo FocusTimer 2.0'
+      },
+      {
+        link_imagem: focustimer3,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Aplicativo FocusTimer 2.0'
+      },
+      {
+        link_imagem: focustimer4,
+        titulo_imagem: 'Página Home',
+        descricao_imagem: 'Aplicativo FocusTimer 2.0'
+      }
+    ],
+    link_deploy: 'https://focus-timer2-0-sigma.vercel.app/',
+    link_repositório: 'https://github.com/mateusrc-dev/FocusTimer2.0'
   },
   {
     nome: 'CSS Responsivo',
